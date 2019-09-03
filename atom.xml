@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>It&#39;s incredible!</title>
+  
+  <subtitle>Shily Make You Incredible！</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://www.incredibleyou.cn/"/>
+  <updated>2019-09-02T10:37:19.879Z</updated>
+  <id>https://www.incredibleyou.cn/</id>
+  
+  <author>
+    <name>Shmily</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello，This is Shmily~</title>
+    <link href="https://www.incredibleyou.cn/2019/09/02/hello-world/"/>
+    <id>https://www.incredibleyou.cn/2019/09/02/hello-world/</id>
+    <published>2019-09-02T09:18:29.039Z</published>
+    <updated>2019-09-02T10:37:19.879Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to my “home”，as you can see,blog is a part of my life,we can share,proposal and comment just like cry laugh and jump in our
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
