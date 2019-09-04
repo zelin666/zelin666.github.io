@@ -8,6 +8,35 @@
       <link href="/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%80)/"/>
       <url>/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%80)/</url>
       
+        <content type="html"><![CDATA[<h2 id="安装所需要下载的软件、环境"><a href="#安装所需要下载的软件、环境" class="headerlink" title="安装所需要下载的软件、环境"></a>安装所需要下载的软件、环境</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>点击<a href="https://nodejs.org/en/" title="Node.js官网" target="_blank" rel="noopener">此处</a>访问官网并下载最新版本的node.js。<br>直接一步一步向下安装就可以。</p><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>点击<a href="https://git-scm.com" title="Node.js官网" target="_blank" rel="noopener">此处</a>访问官网并下载最新版本的Git。<br>也是直接一步一步向下安装就可以。</p><h3 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a>安装HEXO</h3><p>1.在本地需要建立一个Hexo文件夹用于存储本地文件(做本地文件保存以及测试使用)</p><p>2.在文件空白处右键，点击Git Bash Here</p><p>3.点击后弹出git命令框，输入此命令下载hexo：</p><pre class=" language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> -g hexo</code></pre><p><strong>注意：</strong>（git命令框按Ctrl C 是停止服务，不要这样做。）</p><p>4.初始化hexo</p><pre class=" language-bash"><code class="language-bash">$ hexo init</code></pre><p>5.以下四步对建站进行了部署，在进行最后一步后访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就可以查看你的本地hexo访问页面了。</p><pre class=" language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span>$ hexo g$ hexo d$ hexo server</code></pre><p><strong>到此需要下载的工作就进行完了</strong><br><strong>搭建个人博客 HEXO＋Node.Js（二）将进一步讲解如何进行接下来的搭建操作！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HEXO </tag>
+            
+            <tag> Node.js </tag>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客 HEXO＋Node.Js（二）</title>
+      <link href="/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%BA%8C)/"/>
+      <url>/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%BA%8C)/</url>
+      
         <content type="html"><![CDATA[]]></content>
       
       
@@ -36,35 +65,6 @@
       <title>搭建个人博客 HEXO＋Node.Js（三）</title>
       <link href="/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%89)/"/>
       <url>/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%89)/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 博客搭建 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> HEXO </tag>
-            
-            <tag> Node.js </tag>
-            
-            <tag> Github </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>搭建个人博客 HEXO＋Node.Js（二）</title>
-      <link href="/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%BA%8C)/"/>
-      <url>/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%BA%8C)/</url>
       
         <content type="html"><![CDATA[]]></content>
       

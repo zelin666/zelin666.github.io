@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.incredibleyou.cn/"/>
-  <updated>2019-09-04T07:57:22.085Z</updated>
+  <updated>2019-09-04T08:45:33.953Z</updated>
   <id>https://www.incredibleyou.cn/</id>
   
   <author>
@@ -21,7 +21,38 @@
     <link href="https://www.incredibleyou.cn/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%80)/"/>
     <id>https://www.incredibleyou.cn/2019/09/04/搭建个人博客-HEXO＋Node-Js(一)/</id>
     <published>2019-09-04T07:52:19.000Z</published>
-    <updated>2019-09-04T07:57:22.085Z</updated>
+    <updated>2019-09-04T08:45:33.953Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;安装所需要下载的软件、环境&quot;&gt;&lt;a href=&quot;#安装所需要下载的软件、环境&quot; class=&quot;headerlink&quot; title=&quot;安装所需要下载的软件、环境&quot;&gt;&lt;/a&gt;安装所需要下载的软件、环境&lt;/h2&gt;&lt;h3 id=&quot;安装Node-js&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="博客搭建" scheme="https://www.incredibleyou.cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="HEXO" scheme="https://www.incredibleyou.cn/tags/HEXO/"/>
+    
+      <category term="Node.js" scheme="https://www.incredibleyou.cn/tags/Node-js/"/>
+    
+      <category term="Github" scheme="https://www.incredibleyou.cn/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建个人博客 HEXO＋Node.Js（二）</title>
+    <link href="https://www.incredibleyou.cn/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%BA%8C)/"/>
+    <id>https://www.incredibleyou.cn/2019/09/04/搭建个人博客-HEXO＋Node-Js(二)/</id>
+    <published>2019-09-04T07:52:19.000Z</published>
+    <updated>2019-09-04T08:45:45.608Z</updated>
     
     <summary type="html">
     
@@ -45,29 +76,6 @@
     <id>https://www.incredibleyou.cn/2019/09/04/搭建个人博客-HEXO＋Node-Js(三)/</id>
     <published>2019-09-04T07:52:19.000Z</published>
     <updated>2019-09-04T07:58:21.589Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="博客搭建" scheme="https://www.incredibleyou.cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-      <category term="HEXO" scheme="https://www.incredibleyou.cn/tags/HEXO/"/>
-    
-      <category term="Node.js" scheme="https://www.incredibleyou.cn/tags/Node-js/"/>
-    
-      <category term="Github" scheme="https://www.incredibleyou.cn/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建个人博客 HEXO＋Node.Js（二）</title>
-    <link href="https://www.incredibleyou.cn/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%BA%8C)/"/>
-    <id>https://www.incredibleyou.cn/2019/09/04/搭建个人博客-HEXO＋Node-Js(二)/</id>
-    <published>2019-09-04T07:52:19.000Z</published>
-    <updated>2019-09-04T08:13:04.068Z</updated>
     
     <summary type="html">
     
