@@ -427,7 +427,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        526
+                        556
                     </div>
                     
 
@@ -451,7 +451,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="本站采用Hexo-Theme-Matery主题"><a href="#本站采用Hexo-Theme-Matery主题" class="headerlink" title="本站采用Hexo-Theme-Matery主题"></a>本站采用Hexo-Theme-Matery主题</h2><h3 id="修改摘要-summary-在“前一篇-后一篇”卡片中”失效”的问题"><a href="#修改摘要-summary-在“前一篇-后一篇”卡片中”失效”的问题" class="headerlink" title="修改摘要(summary)在“前一篇/后一篇”卡片中”失效”的问题"></a>修改摘要(summary)在“前一篇/后一篇”卡片中”失效”的问题</h3><p>matery的文章目录是卡片式的。<br>在首页，若文章有摘要，则会显示摘要(summary)，若没有才会显示文章的前70个字。<br>但是在打开其中一篇文章时，最底部的“前一篇”和“后一篇”文章的卡片上却直接显示文章的前120个字，不论前/后一篇文章有没有摘要。我做出如下更改，使得在“前一篇”和“后一篇”文章的卡片上也同样显示摘要。<br>对/themes/hexo-theme-matery/layout/_partial/prev-next.ejs文件作如下更改：</p>
-<p>第41行左右，<div class="summary">…</div>的那行改成以下几行：</p>
+<p>第41行左右，<code>&lt;div class=&quot;summary&quot;&gt;...&lt;/div&gt;</code>的那行改成以下几行：</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>div class<span class="token operator">=</span><span class="token string">"summary"</span><span class="token operator">></span>
       <span class="token operator">&lt;</span>% <span class="token keyword">if</span> <span class="token punctuation">(</span>page.prev.summary <span class="token operator">&amp;&amp;</span> page.prev.summary.length <span class="token operator">></span> 0<span class="token punctuation">)</span> <span class="token punctuation">{</span> %<span class="token operator">></span>
           <span class="token operator">&lt;</span>%- page.prev.summary %<span class="token operator">></span>
@@ -459,7 +459,7 @@
           <span class="token operator">&lt;</span>%- strip_html<span class="token punctuation">(</span>page.prev.content<span class="token punctuation">)</span>.substring<span class="token punctuation">(</span>0, 70<span class="token punctuation">)</span> %<span class="token operator">></span>
       <span class="token operator">&lt;</span>% <span class="token punctuation">}</span> %<span class="token operator">></span>
   <span class="token operator">&lt;</span>/div<span class="token operator">></span></code></pre>
-<p>第104行左右，<div class="summary">…</div>的那行改成以下几行：</p>
+<p>第104行左右，<code>&lt;div class=&quot;summary&quot;&gt;...&lt;/div&gt;</code>的那行改成以下几行：</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>div class<span class="token operator">=</span><span class="token string">"summary"</span><span class="token operator">></span>
       <span class="token operator">&lt;</span>% <span class="token keyword">if</span> <span class="token punctuation">(</span>page.summary <span class="token operator">&amp;&amp;</span> page.summary.length <span class="token operator">></span> 0<span class="token punctuation">)</span> <span class="token punctuation">{</span> %<span class="token operator">></span>
           <span class="token operator">&lt;</span>%- page.summary %<span class="token operator">></span>
@@ -467,7 +467,7 @@
           <span class="token operator">&lt;</span>%- strip_html<span class="token punctuation">(</span>page.content<span class="token punctuation">)</span>.substring<span class="token punctuation">(</span>0, 70<span class="token punctuation">)</span> %<span class="token operator">></span>
       <span class="token operator">&lt;</span>% <span class="token punctuation">}</span> %<span class="token operator">></span>
   <span class="token operator">&lt;</span>/div<span class="token operator">></span></code></pre>
-<p>第168行左右，<div class="summary">…</div>的那行改成以下几行：</p>
+<p>第168行左右，<code>&lt;div class=&quot;summary&quot;&gt;...&lt;/div&gt;</code>的那行改成以下几行：</p>
 <pre class=" language-bash"><code class="language-bash">  <span class="token operator">&lt;</span>div class<span class="token operator">=</span><span class="token string">"summary"</span><span class="token operator">></span>
       <span class="token operator">&lt;</span>% <span class="token keyword">if</span> <span class="token punctuation">(</span>page.next.summary <span class="token operator">&amp;&amp;</span> page.next.summary.length <span class="token operator">></span> 0<span class="token punctuation">)</span> <span class="token punctuation">{</span> %<span class="token operator">></span>
           <span class="token operator">&lt;</span>%- page.next.summary %<span class="token operator">></span>
@@ -671,20 +671,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(二)/">
+                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(一)/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（二）">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（一）">
                         
-                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（二）</span>
+                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                    <div class="summary">
       
-          配置将本地的hexo链接成网址，变成个人博客网站。Github 1.点击此处注册(Sign up)你的GitHub账户。
- 2.进入已注册页
+          安装所需要下载的软件、环境安装Node.js点击此处访问官网并下载最新版本的node.js。直接一步一步向下安装就可以。
+安装Git点击此处
       
   </div>
 
