@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello，This is Shmily~, It&#39;s incredible!">
-    <meta name="description" content="Welcome to my “home”，as you can see,blog is a part of my life,we can share,proposal and comment just like cry laugh and ">
+    <meta name="keywords" content="搭建个人博客 HEXO＋Node.Js（一）, It&#39;s incredible!">
+    <meta name="description" content="搭建个人博客 HEXO＋Node.Js（一） | It&#39;s incredible!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello，This is Shmily~ | It&#39;s incredible!</title>
+    <title>搭建个人博客 HEXO＋Node.Js（一） | It&#39;s incredible!</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -286,13 +286,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello，This is Shmily~
+                        搭建个人博客 HEXO＋Node.Js（一）
                     </div>
                 </div>
             </div>
@@ -302,22 +302,113 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+</style>
+<div class="row">
+    <div class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/HEXO/" target="_blank">
+                                <span class="chip bg-color">HEXO</span>
+                            </a>
+                        
+                            <a href="/tags/Node-js/" target="_blank">
+                                <span class="chip bg-color">Node.js</span>
+                            </a>
+                        
+                            <a href="/tags/Github/" target="_blank">
+                                <span class="chip bg-color">Github</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/博客搭建/" class="post-category" target="_blank">
+                                博客搭建
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -329,14 +420,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-09-02
+                    2019-09-04
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        112
+                        0
                     </div>
                     
 
@@ -359,14 +450,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to my “home”，as you can see,blog is a part of my life,we can share,proposal and comment just like cry laugh and jump in our life.when your come to my “home”,I will raise the corners of my mouth and say “Let me Shmily(see how much i love you!)”.</p>
-<h2 id="每次新建页面可以拷贝以下代码！"><a href="#每次新建页面可以拷贝以下代码！" class="headerlink" title="每次新建页面可以拷贝以下代码！"></a>每次新建页面可以拷贝以下代码！</h2><h3 id="放在title下面"><a href="#放在title下面" class="headerlink" title="放在title下面"></a>放在title下面</h3><pre class=" language-bash"><code class="language-bash">comments: <span class="token boolean">true</span> <span class="token comment" spellcheck="true">#是否可评论</span>
-toc: <span class="token boolean">true</span> <span class="token comment" spellcheck="true">#是否显示文章目录</span>
-categories: <span class="token string">"分类名称"</span> <span class="token comment" spellcheck="true">#分类（一个）</span>
-tags:   <span class="token comment" spellcheck="true">#标签</span>
-    - 标签名称
-    - 标签名称（多个）</code></pre>
-
+                
             </div>
             <hr/>
 
@@ -506,7 +590,7 @@ tags:   <span class="token comment" spellcheck="true">#标签</span>
                     </span>
                     <a href="https://www.incredibleyou.cn" class="b-link-green">It's incredible!</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/09/02/hello-world/" class="b-link-green">Hello，This is Shmily~</a>
+                    <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(一)/" class="b-link-green">搭建个人博客 HEXO＋Node.Js（一）</a>
                 </p>
             </div>
         </div>
@@ -528,7 +612,7 @@ tags:   <span class="token comment" spellcheck="true">#标签</span>
         repo: '',
         owner: '',
         admin: null,
-        id: '2019-09-02T17-18-29',
+        id: '2019-09-04T15-52-19',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -553,21 +637,20 @@ tags:   <span class="token comment" spellcheck="true">#标签</span>
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/09/04/两个静态页面传递动态参数/">
+                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(二)/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="两个静态页面传递动态参数">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">两个静态页面传递动态参数</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                    <div class="summary">
       
-          本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。通过URL传参
-思路：
-假定两个页面A和B，我们通过点击A页面的一个按
+          
+title: 搭建个人博客 HEXO＋Node.Js（二）date: 2019-09-04 15:52:19comments: truet
       
   </div>
 
@@ -577,10 +660,46 @@ tags:   <span class="token comment" spellcheck="true">#标签</span>
                         </span>
                         <span class="publish-author">
                             
+                            <i class="fa fa-user fa-fw"></i>
+                            Shmily
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(三)/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（三）">
+                        
+                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（三）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">
+      
+          
+      
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-04
+                            </span>
+                        <span class="publish-author">
+                            
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
+                            <a href="/categories/博客搭建/" class="post-category" target="_blank">
+                                    博客搭建
                                 </a>
                             
                             
@@ -590,53 +709,19 @@ tags:   <span class="token comment" spellcheck="true">#标签</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/" target="_blank">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/HEXO/" target="_blank">
+                        <span class="chip bg-color">HEXO</span>
                     </a>
                     
-                    <a href="/tags/HTML5/" target="_blank">
-                        <span class="chip bg-color">HTML5</span>
+                    <a href="/tags/Node-js/" target="_blank">
+                        <span class="chip bg-color">Node.js</span>
                     </a>
                     
-                    <a href="/tags/正则表达式/" target="_blank">
-                        <span class="chip bg-color">正则表达式</span>
+                    <a href="/tags/Github/" target="_blank">
+                        <span class="chip bg-color">Github</span>
                     </a>
                     
                 </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/09/02/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hello，This is Shmily~">
-                        
-                        <span class="card-title">Hello，This is Shmily~</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">Welcome to my “home”，as you can see,blog is a part of my life,we can share,proposal and comment just like cry laugh and </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-02
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            Shmily
-                            
-                        </span>
-                    </div>
-                </div>
-
                 
             </div>
         </div>
@@ -683,6 +768,53 @@ tags:   <span class="token comment" spellcheck="true">#标签</span>
     });
 </script>
 
+    </div>
+    <div class="col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+    });
+</script>
     
 
 </main>
