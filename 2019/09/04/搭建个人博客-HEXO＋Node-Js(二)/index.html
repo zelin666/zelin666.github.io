@@ -5,7 +5,9 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="搭建个人博客 HEXO＋Node.Js（二）, It&#39;s incredible!">
-    <meta name="description" content="搭建个人博客 HEXO＋Node.Js（二） | It&#39;s incredible!">
+    <meta name="description" content="配置将本地的hexo链接成网址，变成个人博客网站。Github 1.点击此处注册(Sign up)你的GitHub账户。
+ 2.进入已注册页面后，在右上角的“+”中点击New repository按钮。
+ 3.这时注意Owner名后面的Re">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -427,14 +429,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        0
+                        778
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -450,7 +452,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="配置将本地的hexo链接成网址，变成个人博客网站。"><a href="#配置将本地的hexo链接成网址，变成个人博客网站。" class="headerlink" title="配置将本地的hexo链接成网址，变成个人博客网站。"></a>配置将本地的hexo链接成网址，变成个人博客网站。</h2><h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><p> 1.点击<a href="https://github.com" title="Github官网" target="_blank" rel="noopener">此处</a>注册(Sign up)你的GitHub账户。</p>
+<p> 2.进入已注册页面后，在右上角的“+”中点击New repository按钮。</p>
+<p> 3.这时注意Owner名后面的Repository name 一定要是这样的格式： Owner名 + .git.io</p>
+<p> 4.继续添加描述、点击public、点击添加.Redme文件。</p>
+<p> 5.点击Create后就可以在你的主页看到你新建的项目了。建完的项目我们先搁置不动，接下来我们去购买属于自己的域名。</p>
+<h3 id="购置域名"><a href="#购置域名" class="headerlink" title="购置域名"></a>购置域名</h3><p>点击<a href="https://wanwang.aliyun.com/domain/" title="阿里云官网" target="_blank" rel="noopener">此处</a>查询并购买你的域名。</p>
+<h3 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h3><p> 1.点击<a href="https://dns.console.aliyun.com/#/dns/domainList" title="解析域名" target="_blank" rel="noopener">此处</a>来解析你的域名（同样我也已经解析过了，这里只会有解析设置）</p>
+<p> 2.点击解析设置进入页面后点击新手引导设置，它会要求你输入IP</p>
+<p> 3.这个IP需要我们打开cmd（win键 + R键），得到窗口后输 ping A.github.io     \注意A代表的是”Owner名”之前Git配置的时候设置过了。</p>
+<p> 4.将得到IP输入到Domian页面的弹出框中后开始解析，等待解析完成域名配置完毕。</p>
+<h3 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h3><p> 1.在你的新建的hexo目录下的source文件夹下，新建一个CNAME.txt的文本文档。</p>
+<p> 2.在文档中输入你的新买的域名（<a href="http://www.incredibleyou.cn）" target="_blank" rel="noopener">www.incredibleyou.cn）</a> ，保存后关闭。</p>
+<p> 3.重命名你的.txt文件，将.txt文件的后缀去掉（文件会提示不可用，确定即可）。</p>
+<h3 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h3><p>1.打开你的GitHub项目的主页，找到clone按钮，点击按钮以复制你的repository Url。</p>
+<p>2.在你新建的hexo目录下找到_config.yml，打开，在最下面的deploy部分内容修改：</p>
+<pre class=" language-bash"><code class="language-bash">deploy:
+type: <span class="token function">git</span>      \**注意每一列value前都要有一个空格**
+repository： https://github.com/zelin666/zelin666.github.io.git     \注意zelin666是我的名字，需要你填入你自己的名字
+branch: master</code></pre>
+<h3 id="Git部署"><a href="#Git部署" class="headerlink" title="Git部署"></a>Git部署</h3><p>1.使用git部署，在你新建的hexo目录下空白处右键，点击Git Bash Here</p>
+<pre class=" language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</code></pre>
+<p>2.执行之前的步骤:(hexo clean –&gt; hexo generate –&gt;hexo deploy)如下：</p>
+<pre class=" language-bash"><code class="language-bash">$ hexo clean
+$ hexo g
+$ hexo d</code></pre>
+<h3 id="配置GitHub并再次部署"><a href="#配置GitHub并再次部署" class="headerlink" title="配置GitHub并再次部署"></a>配置GitHub并再次部署</h3><p> 1.在你的GitHub页面点击进入你新建的项目，点击Settings进入设置页面。</p>
+<p> 2.在GitHub Pages设置部分找到Custom domain，并在这里输入你购买的域名。</p>
+<p> 3.使用git部署，在你新建的hexo目录下空白处右键，点击Git Bash Here</p>
+<pre class=" language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</code></pre>
+<p> 4.最后再次执行之前的步骤:(hexo clean –&gt; hexo generate –&gt;hexo deploy)</p>
+<pre class=" language-bash"><code class="language-bash">$ hexo clean
+$ hexo g
+$ hexo d</code></pre>
+<p> 5.你就可以看到你的博客了。</p>
+<p> <strong>注意：每次修改配置信息或者其他必须要执行上面的步骤(g、d)，再去GitHub Pages设置部分找到Custom domain并在这里输入你购买的域名。才可以使得配置信息生效。</strong></p>
+<p><strong>到此需要配置的工作就进行完了</strong><br><strong>搭建个人博客 HEXO＋Node.Js（三）将进一步讲解搭建完毕的一些基本问题与基本操作！！</strong></p>
+
             </div>
             <hr/>
 
@@ -637,20 +675,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(一)/">
+                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(三)/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（一）">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（三）">
                         
-                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（一）</span>
+                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（三）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                    <div class="summary">
       
-          安装所需要下载的软件、环境安装Node.js点击此处访问官网并下载最新版本的node.js。直接一步一步向下安装就可以。
-安装Git点击此处
+          博客搭建一些基础概念分类和标签的区别与联系分类和标签是博客系统的两项功能
+*标签和分类的区别： *
+1）同一篇文章标签可以用多个，但通常只能
       
   </div>
 
@@ -696,19 +735,19 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(三)/">
+                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(四)/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（三）">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（四）">
                         
-                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（三）</span>
+                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（四）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary">
       
-          
+          本站采用Hexo-Theme-Matery主题修改摘要(summary)在“前一篇/后一篇”卡片中”失效”的问题matery的文章目录是卡片
       
                     <div class="publish-info">
                             <span class="publish-date">
@@ -846,7 +885,7 @@
            本站由Shmily搭建。
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数已达:&nbsp;
-                <span class="white-color">657</span>
+                <span class="white-color">2.8k</span>
             
 
             

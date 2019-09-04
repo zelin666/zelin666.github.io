@@ -5,7 +5,11 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="搭建个人博客 HEXO＋Node.Js（三）, It&#39;s incredible!">
-    <meta name="description" content="搭建个人博客 HEXO＋Node.Js（三） | It&#39;s incredible!">
+    <meta name="description" content="博客搭建一些基础概念分类和标签的区别与联系分类和标签是博客系统的两项功能
+*标签和分类的区别： *
+1）同一篇文章标签可以用多个，但通常只能属于一个分类； 
+2）标签一般是在写作完成后，根据文章大意进行添加的；
+3）标签可以把文章中重点词语">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -427,14 +431,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        0
+                        819
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -450,7 +454,56 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="博客搭建一些基础概念"><a href="#博客搭建一些基础概念" class="headerlink" title="博客搭建一些基础概念"></a>博客搭建一些基础概念</h2><h3 id="分类和标签的区别与联系"><a href="#分类和标签的区别与联系" class="headerlink" title="分类和标签的区别与联系"></a>分类和标签的区别与联系</h3><p><strong>分类和标签是博客系统的两项功能</strong></p>
+<p>*<em>标签和分类的区别： *</em></p>
+<p>1）同一篇文章标签可以用多个，但通常只能属于一个分类； </p>
+<p>2）标签一般是在写作完成后，根据文章大意进行添加的；</p>
+<p>3）标签可以把文章中重点词语提炼出来，有关键词的意义，但是分类没有； </p>
+<p>4）标签通常反映了您的主要关注点，比如财经、互联网、体育等等； </p>
+<p>5）标签给了我们一条联系他人的纽带，通过标签可以找到您的“同好” </p>
+<h2 id="HEXO的基础命令语法"><a href="#HEXO的基础命令语法" class="headerlink" title="HEXO的基础命令语法"></a>HEXO的基础命令语法</h2><h3 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h3><p>在站点文件夹中打开 git bash，输入如下命令创建文章，其中 title 为文章的标题</p>
+<pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"title"</span></code></pre>
+<p>当输入命令后，就会在 source/_post 文件夹下创建一个文件，命名为：title.md</p>
+<p>这个文件就是将要发布到网站上的原始文件，用于记录文章内容。</p>
+<h3 id="部署Hexo"><a href="#部署Hexo" class="headerlink" title="部署Hexo"></a>部署Hexo</h3><pre class=" language-bash"><code class="language-bash">$ hexo init</code></pre>
+<p><strong>注：这个命令会初始化博客的目录，所以，执行这个命令时，在你想创建的目录下执行，就自动生成到对应目录下。执行命令会在当前命令的路径下，生成以下文件：</strong></p>
+<pre class=" language-bash"><code class="language-bash">  <span class="token keyword">.</span>
+    ├── .deploy         //执行hexo deploy命令部署到GitHub上的内容目录
+    ├── public          //执行hexo generate命令，输出的静态网页内容目录
+    ├── scaffolds      //layout模板文件目录，其中的md文件可以添加编辑
+    ├── scripts        //扩展脚本目录，这里可以自定义一些javascript脚本
+    ├── <span class="token function">source</span>         //文章源码目录，该目录下的markdown和html文件均会被hexo处理。该页面对应repo的根目录，404文件、favicon.ico文件，CNAME文件等都应该放这里，该目录下可新建页面目录。  
+    <span class="token operator">|</span>   ├── _drafts    //草稿文章
+    <span class="token operator">|</span>   └── _posts     //发布文章
+    ├── themes          //主题文件目录
+    ├── _config.yml     //全局配置文件，大多数的设置都在这里
+    └── package.json     //应用程序数据，指明hexo的版本等信息</code></pre>
+<h3 id="相关的命令"><a href="#相关的命令" class="headerlink" title="相关的命令"></a>相关的命令</h3><pre class=" language-bash"><code class="language-bash">    hexo new <span class="token string">"postName"</span>       <span class="token comment" spellcheck="true">#新建文章</span>
+    hexo new page <span class="token string">"pageName"</span>  <span class="token comment" spellcheck="true">#新建页面</span>
+    hexo generate             <span class="token comment" spellcheck="true">#生成静态页面至public目录</span>
+    hexo server               <span class="token comment" spellcheck="true">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span>
+    hexo deploy               <span class="token comment" spellcheck="true">#将.deploy目录部署到GitHub</span></code></pre>
+<h3 id="有的命令可以简写"><a href="#有的命令可以简写" class="headerlink" title="有的命令可以简写"></a>有的命令可以简写</h3><pre class=" language-bash"><code class="language-bash">    hexo n <span class="token operator">==</span> hexo new
+    hexo g <span class="token operator">==</span> hexo generate
+    hexo s <span class="token operator">==</span> hexo server
+    hexo d <span class="token operator">==</span> hexo deploy</code></pre>
+<h3 id="复合命令"><a href="#复合命令" class="headerlink" title="复合命令"></a>复合命令</h3><pre class=" language-bash"><code class="language-bash">    <span class="token comment" spellcheck="true"># 生成完毕后自动部署网站</span>
+    $ hexo g -d</code></pre>
+<h3 id="clean命令清除缓存"><a href="#clean命令清除缓存" class="headerlink" title="clean命令清除缓存"></a>clean命令清除缓存</h3><p>有时候生成的网页出错了，而生成的rss其实没有清除，那么用下面的命令，再重新生成吧!</p>
+<pre class=" language-bash"><code class="language-bash">   $ hexo clean</code></pre>
+<h2 id="写页面的一些操作"><a href="#写页面的一些操作" class="headerlink" title="写页面的一些操作"></a>写页面的一些操作</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>井号代表标题，两井号代表大标题，依次向下类推，直到六个井号，代表六级标题。</p>
+<h3 id="字体样式"><a href="#字体样式" class="headerlink" title="字体样式"></a>字体样式</h3><pre class=" language-bash"><code class="language-bash">*斜体*
+**粗体**
+***加粗斜体***
+~~删除线~~</code></pre>
+<h3 id="头部设置"><a href="#头部设置" class="headerlink" title="头部设置"></a>头部设置</h3><pre class=" language-bash"><code class="language-bash">comments: <span class="token boolean">true</span> <span class="token comment" spellcheck="true">#是否可评论</span>
+toc: <span class="token boolean">true</span> <span class="token comment" spellcheck="true">#是否显示文章目录</span>
+categories: <span class="token string">"分类名称"</span> <span class="token comment" spellcheck="true">#分类（一个）</span>
+tags:   <span class="token comment" spellcheck="true">#标签</span>
+    - 标签名称
+    - 标签名称（多个）</code></pre>
+<p><strong>这里就先介绍基本的问题与操作到这里</strong><br><strong>搭建个人博客 HEXO＋Node.Js（四）将进一步讲解本站主题相关的一些问题！！</strong></p>
+
             </div>
             <hr/>
 
@@ -637,19 +690,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(二)/">
+                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(一)/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（二）">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（一）">
                         
-                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（二）</span>
+                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                    <div class="summary">
       
-          
+          安装所需要下载的软件、环境安装Node.js点击此处访问官网并下载最新版本的node.js。直接一步一步向下安装就可以。
+安装Git点击此处
       
   </div>
 
@@ -695,21 +749,20 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/04/两个静态页面传递动态参数/">
+                <a href="/2019/09/04/搭建个人博客-HEXO＋Node-Js(二)/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="两个静态页面传递动态参数">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（二）">
                         
-                        <span class="card-title">两个静态页面传递动态参数</span>
+                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（二）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary">
       
-          本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。通过URL传参
-思路：
-假定两个页面A和B，我们通过点击A页面的一个按
+          配置将本地的hexo链接成网址，变成个人博客网站。Github 1.点击此处注册(Sign up)你的GitHub账户。
+ 2.进入已注册页
       
                     <div class="publish-info">
                             <span class="publish-date">
@@ -719,8 +772,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
+                            <a href="/categories/博客搭建/" class="post-category" target="_blank">
+                                    博客搭建
                                 </a>
                             
                             
@@ -730,16 +783,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/" target="_blank">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/HEXO/" target="_blank">
+                        <span class="chip bg-color">HEXO</span>
                     </a>
                     
-                    <a href="/tags/HTML5/" target="_blank">
-                        <span class="chip bg-color">HTML5</span>
+                    <a href="/tags/Node-js/" target="_blank">
+                        <span class="chip bg-color">Node.js</span>
                     </a>
                     
-                    <a href="/tags/正则表达式/" target="_blank">
-                        <span class="chip bg-color">正则表达式</span>
+                    <a href="/tags/Github/" target="_blank">
+                        <span class="chip bg-color">Github</span>
                     </a>
                     
                 </div>
@@ -847,7 +900,7 @@
            本站由Shmily搭建。
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数已达:&nbsp;
-                <span class="white-color">657</span>
+                <span class="white-color">2.8k</span>
             
 
             
