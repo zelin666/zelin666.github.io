@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.incredibleyou.cn/"/>
-  <updated>2019-09-04T10:17:00.025Z</updated>
+  <updated>2019-09-04T10:30:47.788Z</updated>
   <id>https://www.incredibleyou.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>搭建个人博客 HEXO＋Node.Js（二）</title>
-    <link href="https://www.incredibleyou.cn/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%BA%8C)/"/>
-    <id>https://www.incredibleyou.cn/2019/09/04/搭建个人博客-HEXO＋Node-Js(二)/</id>
+    <title>搭建个人博客 HEXO＋Node.Js（一）</title>
+    <link href="https://www.incredibleyou.cn/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%80)/"/>
+    <id>https://www.incredibleyou.cn/2019/09/04/搭建个人博客-HEXO＋Node-Js(一)/</id>
     <published>2019-09-04T07:52:19.000Z</published>
-    <updated>2019-09-04T10:17:00.025Z</updated>
+    <updated>2019-09-04T10:30:47.788Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;h2 id=&quot;配置将本地的hexo链接成网址，变成个人博客网站。&quot;&gt;&lt;a href=&quot;#配置将本地的hexo链接成网址，变成个人博客网站。&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;安装所需要下载的软件、环境&quot;&gt;&lt;a href=&quot;#安装所需要下载的软件、环境&quot; class=&quot;headerlink&quot; title=&quot;安装所需要下载的软件、环境&quot;&gt;&lt;/a&gt;安装所需要下载的软件、环境&lt;/h2&gt;&lt;h3 id=&quot;安装Node-js&quot;&gt;&lt;a
         
       
     
@@ -79,11 +79,11 @@
   </entry>
   
   <entry>
-    <title>搭建个人博客 HEXO＋Node.Js（一）</title>
-    <link href="https://www.incredibleyou.cn/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%80)/"/>
-    <id>https://www.incredibleyou.cn/2019/09/04/搭建个人博客-HEXO＋Node-Js(一)/</id>
+    <title>搭建个人博客 HEXO＋Node.Js（二）</title>
+    <link href="https://www.incredibleyou.cn/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%BA%8C)/"/>
+    <id>https://www.incredibleyou.cn/2019/09/04/搭建个人博客-HEXO＋Node-Js(二)/</id>
     <published>2019-09-04T07:52:19.000Z</published>
-    <updated>2019-09-04T10:30:47.788Z</updated>
+    <updated>2019-09-04T10:17:00.025Z</updated>
     
     <summary type="html">
     
@@ -91,7 +91,7 @@
       
         
         
-          &lt;h2 id=&quot;安装所需要下载的软件、环境&quot;&gt;&lt;a href=&quot;#安装所需要下载的软件、环境&quot; class=&quot;headerlink&quot; title=&quot;安装所需要下载的软件、环境&quot;&gt;&lt;/a&gt;安装所需要下载的软件、环境&lt;/h2&gt;&lt;h3 id=&quot;安装Node-js&quot;&gt;&lt;a
+          &lt;h2 id=&quot;配置将本地的hexo链接成网址，变成个人博客网站。&quot;&gt;&lt;a href=&quot;#配置将本地的hexo链接成网址，变成个人博客网站。&quot; class=&quot;headerlink&quot;
         
       
     
@@ -176,7 +176,7 @@
     <link href="https://www.incredibleyou.cn/2019/09/02/hello-world/"/>
     <id>https://www.incredibleyou.cn/2019/09/02/hello-world/</id>
     <published>2019-09-02T09:18:29.039Z</published>
-    <updated>2019-09-04T10:22:27.699Z</updated>
+    <updated>2019-09-04T11:04:19.947Z</updated>
     
     <summary type="html">
     
@@ -184,7 +184,7 @@
       
         
         
-          &lt;p&gt;Welcome to my “home”，as you can see,blog is a part of my life,we can share,proposal and comment just like cry laugh and jump in our
+          &lt;h2 id=&quot;Welcome-to-my-“home”，as-you-can-see-blog-is-a-part-of-my-life&quot;&gt;&lt;a
         
       
     
