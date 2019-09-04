@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.incredibleyou.cn/"/>
-  <updated>2019-09-02T10:37:19.879Z</updated>
+  <updated>2019-09-04T05:53:59.683Z</updated>
   <id>https://www.incredibleyou.cn/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>两个静态页面传递动态参数</title>
+    <link href="https://www.incredibleyou.cn/2019/09/04/%E4%B8%A4%E4%B8%AA%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%92%E5%8A%A8%E6%80%81%E5%8F%82%E6%95%B0/"/>
+    <id>https://www.incredibleyou.cn/2019/09/04/两个静态页面传递动态参数/</id>
+    <published>2019-09-04T05:44:15.000Z</published>
+    <updated>2019-09-04T05:53:59.683Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;pre class=&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://www.incredibleyou.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="JavaScript" scheme="https://www.incredibleyou.cn/tags/JavaScript/"/>
+    
+      <category term="HTML5" scheme="https://www.incredibleyou.cn/tags/HTML5/"/>
+    
+      <category term="正则表达式" scheme="https://www.incredibleyou.cn/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello，This is Shmily~</title>
     <link href="https://www.incredibleyou.cn/2019/09/02/hello-world/"/>
     <id>https://www.incredibleyou.cn/2019/09/02/hello-world/</id>
     <published>2019-09-02T09:18:29.039Z</published>
-    <updated>2019-09-02T10:37:19.879Z</updated>
+    <updated>2019-09-04T05:54:12.658Z</updated>
     
     <summary type="html">
     
@@ -36,6 +67,10 @@
     </summary>
     
     
+      <category term="前端" scheme="https://www.incredibleyou.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="JavaScript" scheme="https://www.incredibleyou.cn/tags/JavaScript/"/>
     
   </entry>
   
