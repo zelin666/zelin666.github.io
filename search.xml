@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>搭建个人博客 HEXO＋Node.Js（一）</title>
-      <link href="/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%80)/"/>
-      <url>/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%80)/</url>
+      <title>随心</title>
+      <link href="/2019/10/07/%E9%9A%8F%E5%BF%83/"/>
+      <url>/2019/10/07/%E9%9A%8F%E5%BF%83/</url>
       
-        <content type="html"><![CDATA[<h2 id="安装所需要下载的软件、环境"><a href="#安装所需要下载的软件、环境" class="headerlink" title="安装所需要下载的软件、环境"></a>安装所需要下载的软件、环境</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>点击<a href="https://nodejs.org/en/" title="Node.js官网" target="_blank" rel="noopener">此处</a>访问官网并下载最新版本的node.js。<br>直接一步一步向下安装就可以。</p><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>点击<a href="https://git-scm.com" title="Git官网" target="_blank" rel="noopener">此处</a>访问官网并下载最新版本的Git。<br>也是直接一步一步向下安装就可以。</p><h3 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a>安装HEXO</h3><p>1.在本地需要建立一个Hexo文件夹用于存储本地文件(做本地文件保存以及测试使用)</p><p>2.在文件空白处右键，点击Git Bash Here</p><p>3.点击后弹出git命令框，输入此命令下载hexo：</p><pre class=" language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> -g hexo</code></pre><p><strong>注意：</strong>（git命令框按Ctrl C 是停止服务，不要这样做。）</p><p>4.初始化hexo</p><pre class=" language-bash"><code class="language-bash">$ hexo init</code></pre><p>5.以下四步对建站进行了部署，在进行最后一步后访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就可以查看你的本地hexo访问页面了。</p><pre class=" language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span>$ hexo g$ hexo d$ hexo server</code></pre><p><strong>到此需要下载的工作就进行完了</strong><br><strong>搭建个人博客 HEXO＋Node.Js（二）将进一步讲解如何进行接下来的搭建操作！</strong></p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       <categories>
@@ -20,11 +20,36 @@
       
         <tags>
             
-            <tag> HEXO </tag>
+            <tag> 小说 </tag>
             
-            <tag> Node.js </tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>两个静态页面传递动态参数</title>
+      <link href="/2019/09/15/%E4%B8%A4%E4%B8%AA%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%92%E5%8A%A8%E6%80%81%E5%8F%82%E6%95%B0/"/>
+      <url>/2019/09/15/%E4%B8%A4%E4%B8%AA%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%92%E5%8A%A8%E6%80%81%E5%8F%82%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。"><a href="#本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。" class="headerlink" title="本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。"></a>本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。</h3><p><strong>通过URL传参</strong></p><p><strong>思路：</strong></p><p>假定两个页面A和B，我们通过点击A页面的一个按钮链接跳转到B，A页面的链接上携带了一个参数，到B页面通过JS取到参数上携带的值。</p><p><strong>A页面代码：</strong></p><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>html<span class="token operator">></span>  <span class="token operator">&lt;</span>form<span class="token operator">></span>    <span class="token operator">&lt;</span>div<span class="token operator">></span>      <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"https://www.ABC.com/CCC?form.参数=100（值）"</span><span class="token operator">></span>跳转按钮<span class="token operator">&lt;</span>/a<span class="token operator">></span>    <span class="token operator">&lt;</span>/div<span class="token operator">></span>  <span class="token operator">&lt;</span>/form<span class="token operator">></span><span class="token operator">&lt;</span>/html<span class="token operator">></span></code></pre><p><strong>我们此时只需在B页面写个JS如下便可以取到参数：</strong></p><pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> getUrlParam<span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>                var reg <span class="token operator">=</span> new RegExp<span class="token punctuation">(</span><span class="token string">"(^|&amp;)"</span> + name + <span class="token string">"=([^&amp;]*)(&amp;|$)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                var r <span class="token operator">=</span> window.location.search.substr<span class="token punctuation">(</span>1<span class="token punctuation">)</span>.match<span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">;</span>                 <span class="token keyword">if</span> <span class="token punctuation">(</span>r <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span> unescape<span class="token punctuation">(</span>r<span class="token punctuation">[</span>2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token keyword">return</span> null<span class="token punctuation">;</span>             <span class="token punctuation">}</span>            var x1 <span class="token operator">=</span> getUrlParam<span class="token punctuation">(</span><span class="token string">'参数'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>x1 <span class="token operator">==</span><span class="token operator">=</span> <span class="token string">"Customer Focus"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                 document.getElementById<span class="token punctuation">(</span><span class="token string">"c"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span> </code></pre><p><strong>这里我们使用到了正则表达式，匹配URL中的传过来的参数，取到了值便可以进行操作了，我做的操作是让id为c的进行点击操作</strong><br><strong>当然不要忘了应用的时候注意粗心大意的问题，例如link写完导入的JS文件。</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
             
-            <tag> Github </tag>
+            <tag> JavaScript </tag>
+            
+            <tag> HTML5 </tag>
+            
+            <tag> 正则表达式 </tag>
             
         </tags>
       
@@ -120,27 +145,27 @@
     
     
     <entry>
-      <title>两个静态页面传递动态参数</title>
-      <link href="/2019/09/04/%E4%B8%A4%E4%B8%AA%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%92%E5%8A%A8%E6%80%81%E5%8F%82%E6%95%B0/"/>
-      <url>/2019/09/04/%E4%B8%A4%E4%B8%AA%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%92%E5%8A%A8%E6%80%81%E5%8F%82%E6%95%B0/</url>
+      <title>搭建个人博客 HEXO＋Node.Js（一）</title>
+      <link href="/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%80)/"/>
+      <url>/2019/09/04/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-HEXO%EF%BC%8BNode-Js(%E4%B8%80)/</url>
       
-        <content type="html"><![CDATA[<h3 id="本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。"><a href="#本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。" class="headerlink" title="本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。"></a>本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。</h3><p><strong>通过URL传参</strong></p><p><strong>思路：</strong></p><p>假定两个页面A和B，我们通过点击A页面的一个按钮链接跳转到B，A页面的链接上携带了一个参数，到B页面通过JS取到参数上携带的值。</p><p><strong>A页面代码：</strong></p><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>html<span class="token operator">></span>  <span class="token operator">&lt;</span>form<span class="token operator">></span>    <span class="token operator">&lt;</span>div<span class="token operator">></span>      <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"https://www.ABC.com/CCC?form.参数=100（值）"</span><span class="token operator">></span>跳转按钮<span class="token operator">&lt;</span>/a<span class="token operator">></span>    <span class="token operator">&lt;</span>/div<span class="token operator">></span>  <span class="token operator">&lt;</span>/form<span class="token operator">></span><span class="token operator">&lt;</span>/html<span class="token operator">></span></code></pre><p><strong>我们此时只需在B页面写个JS如下便可以取到参数：</strong></p><pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> getUrlParam<span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>                var reg <span class="token operator">=</span> new RegExp<span class="token punctuation">(</span><span class="token string">"(^|&amp;)"</span> + name + <span class="token string">"=([^&amp;]*)(&amp;|$)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                var r <span class="token operator">=</span> window.location.search.substr<span class="token punctuation">(</span>1<span class="token punctuation">)</span>.match<span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">;</span>                 <span class="token keyword">if</span> <span class="token punctuation">(</span>r <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span> unescape<span class="token punctuation">(</span>r<span class="token punctuation">[</span>2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token keyword">return</span> null<span class="token punctuation">;</span>             <span class="token punctuation">}</span>            var x1 <span class="token operator">=</span> getUrlParam<span class="token punctuation">(</span><span class="token string">'参数'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>x1 <span class="token operator">==</span><span class="token operator">=</span> <span class="token string">"Customer Focus"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                 document.getElementById<span class="token punctuation">(</span><span class="token string">"c"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span> </code></pre><p><strong>这里我们使用到了正则表达式，匹配URL中的传过来的参数，取到了值便可以进行操作了，我做的操作是让id为c的进行点击操作</strong><br><strong>当然不要忘了应用的时候注意粗心大意的问题，例如link写完导入的JS文件。</strong></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="安装所需要下载的软件、环境"><a href="#安装所需要下载的软件、环境" class="headerlink" title="安装所需要下载的软件、环境"></a>安装所需要下载的软件、环境</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>点击<a href="https://nodejs.org/en/" title="Node.js官网" target="_blank" rel="noopener">此处</a>访问官网并下载最新版本的node.js。<br>直接一步一步向下安装就可以。</p><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>点击<a href="https://git-scm.com" title="Git官网" target="_blank" rel="noopener">此处</a>访问官网并下载最新版本的Git。<br>也是直接一步一步向下安装就可以。</p><h3 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a>安装HEXO</h3><p>1.在本地需要建立一个Hexo文件夹用于存储本地文件(做本地文件保存以及测试使用)</p><p>2.在文件空白处右键，点击Git Bash Here</p><p>3.点击后弹出git命令框，输入此命令下载hexo：</p><pre class=" language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> -g hexo</code></pre><p><strong>注意：</strong>（git命令框按Ctrl C 是停止服务，不要这样做。）</p><p>4.初始化hexo</p><pre class=" language-bash"><code class="language-bash">$ hexo init</code></pre><p>5.以下四步对建站进行了部署，在进行最后一步后访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就可以查看你的本地hexo访问页面了。</p><pre class=" language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span>$ hexo g$ hexo d$ hexo server</code></pre><p><strong>到此需要下载的工作就进行完了</strong><br><strong>搭建个人博客 HEXO＋Node.Js（二）将进一步讲解如何进行接下来的搭建操作！</strong></p>]]></content>
       
       
       <categories>
           
-          <category> 前端 </category>
+          <category> 博客搭建 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> JavaScript </tag>
+            <tag> HEXO </tag>
             
-            <tag> HTML5 </tag>
+            <tag> Node.js </tag>
             
-            <tag> 正则表达式 </tag>
+            <tag> Github </tag>
             
         </tags>
       
@@ -150,8 +175,8 @@
     
     <entry>
       <title>Hello，This is Shmily~</title>
-      <link href="/2019/09/02/hello-world/"/>
-      <url>/2019/09/02/hello-world/</url>
+      <link href="/2019/09/01/hello-world/"/>
+      <url>/2019/09/01/hello-world/</url>
       
         <content type="html"><![CDATA[<h2 id="Welcome-to-my-“home”，as-you-can-see-blog-is-a-part-of-my-life"><a href="#Welcome-to-my-“home”，as-you-can-see-blog-is-a-part-of-my-life" class="headerlink" title="Welcome to my “home”，as you can see,blog is a part of my life,"></a>Welcome to my “home”，as you can see,blog is a part of my life,</h2><h3 id="we-can-share-proposal-and-comment-just-like-cry-laugh-and-jump-in-our-life"><a href="#we-can-share-proposal-and-comment-just-like-cry-laugh-and-jump-in-our-life" class="headerlink" title="we can share,proposal and comment just like cry laugh and jump in our life."></a>we can share,proposal and comment just like cry laugh and jump in our life.</h3><h4 id="when-your-come-to-my-“home”"><a href="#when-your-come-to-my-“home”" class="headerlink" title="when your come to my “home”,"></a>when your come to my “home”,</h4><h4 id="I-will-raise-the-corners-of-my-mouth-and-say"><a href="#I-will-raise-the-corners-of-my-mouth-and-say" class="headerlink" title="I will raise the corners of my mouth and say"></a>I will raise the corners of my mouth and say</h4><h3 id="“Let-me-Shmily-see-how-much-i-love-you-”"><a href="#“Let-me-Shmily-see-how-much-i-love-you-”" class="headerlink" title="“Let me Shmily(see how much i love you!)”."></a>“Let me Shmily(see how much i love you!)”.</h3>]]></content>
       
