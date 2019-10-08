@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>It&#39;s incredible!</title>
   
-  <subtitle>Shmily Make You Incredible！</subtitle>
+  <subtitle>Shmily Makes You Incredible！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.incredibleyou.cn/"/>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>随心</title>
-    <link href="https://www.incredibleyou.cn/2019/10/07/%E9%9A%8F%E5%BF%83/"/>
-    <id>https://www.incredibleyou.cn/2019/10/07/随心/</id>
+    <link href="https://www.incredibleyou.cn/2019/10/07/%E3%80%8A%E9%9A%8F%E5%BF%83%E3%80%8B%20%20%201/"/>
+    <id>https://www.incredibleyou.cn/2019/10/07/《随心》   1/</id>
     <published>2019-10-07T07:48:47.000Z</published>
     <updated>2019-10-07T08:30:05.233Z</updated>
     
@@ -200,8 +200,8 @@
   
   <entry>
     <title>Hello，This is Shmily~</title>
-    <link href="https://www.incredibleyou.cn/2019/01/01/hello-world/"/>
-    <id>https://www.incredibleyou.cn/2019/01/01/hello-world/</id>
+    <link href="https://www.incredibleyou.cn/2019/01/01/%E7%AC%AC%E4%B8%80%E7%AF%87%EF%BC%9A%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://www.incredibleyou.cn/2019/01/01/第一篇：关于我的博客/</id>
     <published>2019-01-01T10:18:18.000Z</published>
     <updated>2019-10-07T08:21:14.110Z</updated>
     
