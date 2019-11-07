@@ -4,8 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello，This is Shmily~, It&#39;s incredible!">
-    <meta name="description" content="Welcome to my “home”，as you can see,blog is a part of my life,we can share,proposal and comment just like cry laugh and ">
+    <meta name="keywords" content="正则表达式（一）, It&#39;s incredible!">
+    <meta name="description" content="之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。码：
+&amp;lt;html&gt;
+  &amp;lt;form&gt;
+    &amp;lt;div&gt;
+      &amp;lt;a href=&#34;https://www.ABC.com/CCC">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello，This is Shmily~ | It&#39;s incredible!</title>
+    <title>正则表达式（一） | It&#39;s incredible!</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -286,13 +290,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello，This is Shmily~
+                        正则表达式（一）
                     </div>
                 </div>
             </div>
@@ -302,22 +306,113 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+</style>
+<div class="row">
+    <div class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/JavaScript/" target="_blank">
+                                <span class="chip bg-color">JavaScript</span>
+                            </a>
+                        
+                            <a href="/tags/HTML5/" target="_blank">
+                                <span class="chip bg-color">HTML5</span>
+                            </a>
+                        
+                            <a href="/tags/正则表达式/" target="_blank">
+                                <span class="chip bg-color">正则表达式</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/正则表达式/" class="post-category" target="_blank">
+                                正则表达式
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -329,14 +424,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-01-01
+                    2019-10-24
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        55
+                        113
                     </div>
                     
 
@@ -359,7 +454,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Welcome-to-my-“home”，as-you-can-see-blog-is-a-part-of-my-life"><a href="#Welcome-to-my-“home”，as-you-can-see-blog-is-a-part-of-my-life" class="headerlink" title="Welcome to my “home”，as you can see,blog is a part of my life,"></a>Welcome to my “home”，as you can see,blog is a part of my life,</h2><h3 id="we-can-share-proposal-and-comment-just-like-cry-laugh-and-jump-in-our-life"><a href="#we-can-share-proposal-and-comment-just-like-cry-laugh-and-jump-in-our-life" class="headerlink" title="we can share,proposal and comment just like cry laugh and jump in our life."></a>we can share,proposal and comment just like cry laugh and jump in our life.</h3><h4 id="when-your-come-to-my-“home”"><a href="#when-your-come-to-my-“home”" class="headerlink" title="when your come to my “home”,"></a>when your come to my “home”,</h4><h4 id="I-will-raise-the-corners-of-my-mouth-and-say"><a href="#I-will-raise-the-corners-of-my-mouth-and-say" class="headerlink" title="I will raise the corners of my mouth and say"></a>I will raise the corners of my mouth and say</h4><h3 id="“Let-me-Shmily-see-how-much-i-love-you-”"><a href="#“Let-me-Shmily-see-how-much-i-love-you-”" class="headerlink" title="“Let me Shmily(see how much i love you!)”."></a>“Let me Shmily(see how much i love you!)”.</h3>
+                <h3 id="之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。"><a href="#之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。" class="headerlink" title="之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。"></a>之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。</h3><p><strong>码：</strong></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>html<span class="token operator">></span>
+  <span class="token operator">&lt;</span>form<span class="token operator">></span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"https://www.ABC.com/CCC?form.参数=100（值）"</span><span class="token operator">></span>跳转按钮<span class="token operator">&lt;</span>/a<span class="token operator">></span>
+    <span class="token operator">&lt;</span>/div<span class="token operator">></span>
+  <span class="token operator">&lt;</span>/form<span class="token operator">></span>
+<span class="token operator">&lt;</span>/html<span class="token operator">></span></code></pre>
+<p><strong>数：</strong></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> getUrlParam<span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                var reg <span class="token operator">=</span> new RegExp<span class="token punctuation">(</span><span class="token string">"(^|&amp;)"</span> + name + <span class="token string">"=([^&amp;]*)(&amp;|$)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                var r <span class="token operator">=</span> window.location.search.substr<span class="token punctuation">(</span>1<span class="token punctuation">)</span>.match<span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>r <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span> unescape<span class="token punctuation">(</span>r<span class="token punctuation">[</span>2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> null<span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span>
+            var x1 <span class="token operator">=</span> getUrlParam<span class="token punctuation">(</span><span class="token string">'参数'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>x1 <span class="token operator">==</span><span class="token operator">=</span> <span class="token string">"Customer Focus"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                 document.getElementById<span class="token punctuation">(</span><span class="token string">"c"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> </code></pre>
+<p><strong>作</strong></p>
+
             </div>
             <hr/>
 
@@ -499,7 +615,7 @@
                     </span>
                     <a href="https://www.incredibleyou.cn" class="b-link-green">It's incredible!</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/01/01/第一篇：关于我的博客/" class="b-link-green">Hello，This is Shmily~</a>
+                    <a href="/2019/10/24/正则表达式（一）/" class="b-link-green">正则表达式（一）</a>
                 </p>
             </div>
         </div>
@@ -521,7 +637,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2019-01-01T18-18-18',
+        id: '2019-10-24T16-48-15',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -542,31 +658,91 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/09/03/搭建个人博客-HEXO＋Node-Js(一)/">
+                <a href="/2019/10/24/正则表达式（一）/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="搭建个人博客 HEXO＋Node.Js（一）">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="正则表达式（一）">
                         
-                        <span class="card-title">搭建个人博客 HEXO＋Node.Js（一）</span>
+                        <span class="card-title">正则表达式（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                    <div class="summary">
       
-          安装所需要下载的软件、环境安装Node.js点击此处访问官网并下载最新版本的node.js。直接一步一步向下安装就可以。
-安装Git点击此处
+          之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。码：
+&lt;html>
+  &lt;form>
+    
       
   </div>
 
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-03
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/正则表达式/" class="post-category" target="_blank">
+                                    正则表达式
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JavaScript/" target="_blank">
+                        <span class="chip bg-color">JavaScript</span>
+                    </a>
+                    
+                    <a href="/tags/HTML5/" target="_blank">
+                        <span class="chip bg-color">HTML5</span>
+                    </a>
+                    
+                    <a href="/tags/正则表达式/" target="_blank">
+                        <span class="chip bg-color">正则表达式</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/10/07/《随心》   1/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="随心">
+                        
+                        <span class="card-title">随心</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">
+      
+          《序》  冲着变换颜色的灯光吐出的烟气十分的撩人，在酒吧里，一个旋转的投光机散下红色、绿色、紫色，他自己坐在那里，吸着烟，却在嘴角露出微笑，
+      
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -582,53 +758,11 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/HEXO/" target="_blank">
-                        <span class="chip bg-color">HEXO</span>
-                    </a>
-                    
-                    <a href="/tags/Node-js/" target="_blank">
-                        <span class="chip bg-color">Node.js</span>
-                    </a>
-                    
-                    <a href="/tags/Github/" target="_blank">
-                        <span class="chip bg-color">Github</span>
+                    <a href="/tags/小说/" target="_blank">
+                        <span class="chip bg-color">小说</span>
                     </a>
                     
                 </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/01/01/第一篇：关于我的博客/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hello，This is Shmily~">
-                        
-                        <span class="card-title">Hello，This is Shmily~</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">Welcome to my “home”，as you can see,blog is a part of my life,we can share,proposal and comment just like cry laugh and </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-01
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            Shmily
-                            
-                        </span>
-                    </div>
-                </div>
-
                 
             </div>
         </div>
@@ -675,6 +809,53 @@
     });
 </script>
 
+    </div>
+    <div class="col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+    });
+</script>
     
 
 </main>
